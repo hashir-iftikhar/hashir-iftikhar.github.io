@@ -1,0 +1,65 @@
+
+h1 {
+
+  font-family: "Curlz MT", cursive;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 50px 30px 20px 60px;
+  text-align: center;
+  color: white;
+}
+.bottom {
+
+  font-family: "Curlz MT", cursive;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 50px 30px 20px 60px;
+  text-align: center;
+  color: white;
+}
+.cursor-glow {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.06) 0%,
+        rgba(255,255,255,0.025) 35%,
+        rgba(255,255,255,0.01) 55%,
+        transparent 75%
+    );
+
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.08s linear;
+}
+
+
+
+
+body {
+    background: black;
+
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.back-btn:hover {
+  color: #06b6d4;
+  border-color: #06b6d4;
+  background-color: rgba(6, 182, 212, 0.1);
+}

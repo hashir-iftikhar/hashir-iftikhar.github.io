@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="aboutstyle.css" rel="stylesheet">
+        <title>About</title>
+        <script>
+            document.addEventListener("DOMContentLoaded" , function()
+            {   let spotlight = document.querySelector(".cursor-glow");
+                document.addEventListener("mousemove" , (e)=>{
+                    spotlight.style.left = e.clientX + "px";
+                    spotlight.style.top = e.clientY + "px";
+                });
+            }
+            );
+        </script>
+    </head>
+    <body>
+        <div class = "cursor-glow"></div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Muhammad Hashir Iftikhar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Socials
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/muhammad-hashir-iftikhar-7166b937b/">LinkedIn</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/hashir-iftikhar">GitHub</a></li>
+                                    <li><a class= "dropdown-item" href="Hashir_CV.pdf" download>Download My CV</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+</div>
+<div id="list-example" class="list-group">
+  <a class="list-group-item list-group-item-action" href="#list-item-1">Education</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-2">Skills</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-3">Involement</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-4">Interests</a>
+</div>
+<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+  <h4 id="list-item-1" class="heading">Education</h4>
+  <p class = "paragraph"> I'm a 5th-semester BS Artificial Intelligence student at PAF-IAST
+        (Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology),
+        maintaining a CGPA of around 3.5–3.6. Alongside my degree,
+        I've been working through different courses and projects to deepen my
+        foundations in computer science and applied AI. I also hold an Oracle Cloud
+        Infrastructure 2025 certification </p>
+  <h4 id="list-item-2" class="heading">Skills</h4>
+  <ul>
+    <h5 class = "head_list">Languages</h5>
+    <li class = "list">Python</li>
+    <li class = "list">C++</li>
+    <li class = "list">SQL</li>
+    <li class = "list">HTML, CSS</li>
+    <h5 class = "head_list">AI Automation</h5>
+    <li class = "list">n8n</li>
+  </ul>
+  <h4 id="list-item-3" class="heading">Involement</h4>
+  <p class = "paragraph">I'm a founding member of <strong>TEDxPAFIAST</strong>, where I hold dual
+        roles as Spokesperson and Treasurer. I also serve as Content Strategist
+        at <strong>ScaleUp Student Society</strong>, helping shape how the
+        organization communicates its work. Beyond campus, I volunteer with
+        <strong>Al Umaat Foundation</strong> on community welfare initiatives —
+        including tree plantation drives, food distribution, and spending time
+        with orphaned children.</p>
+  <h4 id="list-item-4" class="heading">Interests</h4>
+  <p class = "paragraph">I love building things and constantly learning new stuff — whether it's
+    picking up a new programming language, experimenting with a tool I've
+    never touched before, or figuring out how a system works under the hood.
+    I'm the kind of person who enjoys diving into a random rabbit hole just
+    to understand something better. That curiosity is what pushes me to keep
+    building side projects and exploring ideas outside the classroom.</p>
+</div>
+</body>
+</html>

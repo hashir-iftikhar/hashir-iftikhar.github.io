@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="projectstyle.css" rel="stylesheet">
+        <title>About</title>
+        <script>
+            document.addEventListener("DOMContentLoaded" , function()
+            {   let spotlight = document.querySelector(".cursor-glow");
+                document.addEventListener("mousemove" , (e)=>{
+                    spotlight.style.left = e.clientX + "px";
+                    spotlight.style.top = e.clientY + "px";
+                });
+            }
+            );
+        </script>
+    </head>
+    <body>
+      <div class = "cursor-glow"></div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Muhammad Hashir Iftikhar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Socials
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/muhammad-hashir-iftikhar-7166b937b/">LinkedIn</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/hashir-iftikhar">GitHub</a></li>
+                                    <li><a class= "dropdown-item" href="Hashir_CV.pdf" download>Download My CV</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+</div>
+<div class="accordion" id="aboutAccordion">
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h4>F1 Race Analyst – Automated Post-Race Workflow </h4>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#aboutAccordion">
+      <div class="card-body">
+         A fully automated AI-powered analysis system built around Formula 1 race data. The pipeline pulls live data from the Jolpica-F1 API, uses Claude (Sonnet for analysis, Haiku for content generation) to generate insights, stores results in Supabase, and automatically publishes to Facebook, Discord, Gmail, and Telegram — all orchestrated through n8n with zero manual intervention.
+<p>The system runs on two branches: a race-day flow that triggers full race analysis and multi-platform publishing, and a non-race-day flow that shares curated F1 facts instead — keeping engagement consistent even between race weekends.</p>
+<p><h5>Tech:</h5> <ul><li>n8n</li> <li>Claude API</li><li>Supabase</li><li> Webhook Automation</li><li> Multi-Platform Publishing</li></ul></p>
+<a href="https://github.com/hashir-iftikhar/n8n-F1-analyst-and-socialmedia-posting">Git-Hub Repo</a>
+</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <h4>Unified Sales Data Warehouse</h4>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#aboutAccordion">
+      <div class="card-body">
+A structured data warehouse built in SQL Server using the Medallion Architecture pattern — organizing raw sales data through Bronze (raw), Silver (cleaned/transformed), and Gold (business-ready) layers. The project focused on building reliable ETL pipelines and resolving real data quality issues, including a product key normalization mismatch discovered between Silver-layer tables.
+<p>The final Gold-layer views are designed to directly support business reporting and analytics use cases, with the full technical process documented in an IEEE-format two-column report.
+<h5>Tech:</h5> <ul><li>SQL Server</li> <li>Medallion Architecture</li> <li>ETL Design</li> <li>Data Modeling</li></ul></p>
+<a href="https://github.com/hashir-iftikhar/sql-dataware-project">Git-Hub Repo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h5>Certification : Oracle Certified AI Foundations Associates</h5>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#aboutAccordion">
+      <div class="card-body">
+        <p>Demonstrated foundational knowledge of Oracle Cloud Infrastructure services, architecture, and
+deployment models.</p>
+<img src = "Oracle Certification.png" alt = "Oracle Certification">
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

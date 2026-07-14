@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Home</title>
+        <script>
+            document.addEventListener("DOMContentLoaded" , function()
+            {   let spotlight = document.querySelector(".cursor-glow");
+                document.addEventListener("mousemove" , (e)=>{
+                    spotlight.style.left = e.clientX + "px";
+                    spotlight.style.top = e.clientY + "px";
+                });
+            }
+            );
+        </script>
+    </head>
+    <body>
+        <div class = "cursor-glow"></div>
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Muhammad Hashir Iftikhar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Socials
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/muhammad-hashir-iftikhar-7166b937b/">LinkedIn</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/hashir-iftikhar">GitHub</a></li>
+                                    <li><a class= "dropdown-item" href="Hashir_CV.pdf" download>Download My CV</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+</div>
+<div>
+    <h1>Muhammad Hashir</h1>
+    <h1 class = "second">Iftikhar</h1>
+    <p class = "tagline">BS Artificial Intelligence Student</p>
+    <p class = "tagline1">Aspiring AI/ML Engineer</p>
+    <p class= "body"> AI student building intelligent automation systems — from real-time data pipelines </p>
+     <p class = "body1">to AI-powered content generation. Currently exploring the intersection of automation,</p>
+     <p class = "body1">machine learning, and real-world impact.</p>
+    <div class="hero-buttons mt-4">
+  <a href="projects.html" class="btn btn-light btn-lg me-3">View Projects</a>
+  <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Contact Me
+</a>
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">My Contact Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Name:</strong> Muhammad Hashir Iftikhar</p>
+        <p><strong>Email:</strong> muhammadhashiriftikhar@gmail.com</p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<footer>
+  <p class = "c">&copy; 2026 Muhammad Hashir Iftikhar. <a href="easter-egg.html" class="egg-link">✦</a></p>
+</footer>
+</body>
+</html>
