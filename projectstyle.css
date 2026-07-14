@@ -31,7 +31,10 @@ body::before {
         transform: translate(10%, 10%) rotate(180deg);
     }
 }
-
+img{
+    max-width:100%;
+    height: auto;
+}
 .cursor-glow {
     position: fixed;
     width: 250px;
