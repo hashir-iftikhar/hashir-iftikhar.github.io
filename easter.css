@@ -63,3 +63,46 @@ body {
   border-color: #06b6d4;
   background-color: rgba(6, 182, 212, 0.1);
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h1, .second {
+    font-size: 38px;
+    margin: 30px 20px 10px 20px;
+  }
+
+  .tagline, .tagline1 {
+    font-size: 20px;
+    margin: -5px 20px 10px 20px;
+  }
+
+  .body, .body1, .paragraph {
+    font-size: 16px;
+    margin: 15px 20px 15px 20px;
+  }
+
+  .hero-buttons {
+    margin: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .heading {
+    font-size: 22px;
+    margin: 10px 15px;
+  }
+
+  .list, .head_list {
+    margin: -5px 15px 15px 30px;
+  }
+
+ 
+  .cursor-glow {
+    display: none;
+  }
+}
