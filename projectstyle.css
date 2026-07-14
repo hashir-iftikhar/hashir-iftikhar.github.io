@@ -31,9 +31,11 @@ body::before {
         transform: translate(10%, 10%) rotate(180deg);
     }
 }
-img{
+.card-body img{
     max-width:100%;
     height: auto;
+    display: block;
+    width : 100%;
 }
 .cursor-glow {
     position: fixed;
